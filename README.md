@@ -130,7 +130,7 @@ def SHA256_padding(m_bytes):
 
     return padded_message + padded_block_64
 ```
-### Messsage Schedule
+### Message Schedule
 ```python
 def SHA256_extended(m_int_512):
     W = [(m_int_512 >> 32 * (15 - t)) & 0xFFFFFFFF for t in range(0, 16)]
